@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>SIGN UP</title>
-		<link rel="stylesheet" type="text/css" href="css/SIGN UP.css">
+		<link rel="stylesheet" type="text/css" href="CSS/SIGN UP.css">
 		<link rel="shorcut icon" type="image/png" href="IMAGES1/New.png">
 		<meta name="viewport" content="width=device-width , initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
