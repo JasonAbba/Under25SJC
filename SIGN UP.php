@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>SIGN UP</title>
-		<link rel="stylesheet" type="text/css" href="CSS/SIGN UP.css">
+		<link rel="stylesheet" type="text/css" href="css/SIGN UP.css">
 		<link rel="shorcut icon" type="image/png" href="IMAGES1/New.png">
 		<meta name="viewport" content="width=device-width , initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
@@ -16,7 +16,7 @@
 			<nav>
 				<div class="rwo clearfix">
 					<ul class="main_navi animate__animated animate__slideInDown" id="checking" >
-						<li><a href="index.html">HOME</a></li>
+						<li><a href="HOME.html">HOME</a></li>
 						<li><a href="ABOUT US.html">ABOUT US</a></li>
 						<li><a href="#">CREATIONS</a></li>
 						<li><a href="CCW ENTRY.html">CCW ENTRY</a></li>
@@ -46,7 +46,7 @@
 						} 
 
 						// connecting to database
-						$servername = 'localhost';
+						$servername = 'localhost';  
 						$user = 'root';  
 						$pass = '';  
 						$dbname = 'under25db';  
@@ -93,20 +93,20 @@
 						}
 
 						// sending email
-						// if(!empty($_POST["emailaddr"]))
-						// {
-						// 	$email = $_POST["emailaddr"];
-						// 	$subject = "WELCOME TO Under25SJC!!";
-						// 	$msg = "We're so glad to have you fam. Stick around for amazing content and make sure to follow our Instagram page @under25sjc";
-						// 	if(mail($email, $subject, $msg))
-						// 	{
-						// 		//echo "sent!";
-						// 	}
-						// 	else
-						// 	{
-						// 		//echo "not sent";
-						// 	}
-						// }
+						if(!empty($_POST["emailaddr"]))
+						{
+							$email = $_POST["emailaddr"];
+							$subject = "WELCOME TO Under25SJC!!";
+							$msg = "We're so glad to have you fam. Stick around for amazing content and make sure to follow our Instagram page @under25sjc";
+							if(mail($email, $subject, $msg))
+							{
+								//echo "sent!";
+							}
+							else
+							{
+								//echo "not sent";
+							}
+						}
 						 
 						mysqli_close($conn);
 					?>
